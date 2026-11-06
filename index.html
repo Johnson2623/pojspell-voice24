@@ -68,7 +68,7 @@ audio{color-scheme:light}
  .tabs{flex:0 0 42px;gap:5px;margin:0;grid-template-columns:1fr 1fr 1.18fr .64fr}
  .tabs button,.speed-control{height:42px;min-width:0;font-size:clamp(15px,4vw,18px);padding:0 3px;border-radius:9px}
  .speed-control{gap:2px}.speed-control select{font-size:16px;width:58px;max-width:64px;padding:0 1px;border:0}
- #p1{flex:0 0 auto;min-height:0;display:grid;grid-template-rows:clamp(230px,29dvh,250px) 19px calc(var(--key-h)*2 + 4px) 19px calc(var(--key-h)*2 + 4px) 19px var(--key-h) 19px var(--key-h);gap:3px}
+ #p1{flex:1;min-height:0;display:grid;grid-template-rows:clamp(230px,29dvh,250px) 19px minmax(104px,3fr) 19px minmax(104px,3fr) 19px minmax(34px,1fr) 19px minmax(34px,1fr);gap:3px}
  #p1[hidden]{display:none}
  .out{min-width:0;min-height:0;padding:8px 8px 5px;border-radius:14px;display:flex;flex-direction:column;justify-content:center;overflow:visible}
  .word{font-size:clamp(36px,9.8vw,44px);line-height:1.2;min-height:48px}
@@ -85,9 +85,9 @@ audio{color-scheme:light}
  .sub,#voiceStatus,#mainSandhiSource{font-size:11px;line-height:1.35;margin-top:3px;overflow-wrap:anywhere}
  .lab,.out+.lab{font-size:12px;line-height:19px;margin:0;align-self:end}
  .row{display:grid;gap:4px;min-width:0;min-height:0;grid-template-columns:repeat(9,minmax(0,1fr));align-content:stretch}
- .row button{height:var(--key-h);min-width:0;min-height:0;padding:0 1px;line-height:1.15;font-size:clamp(16px,4.3vw,19px);font-family:"Charis SIL","Gentium Plus","Times New Roman",serif;border-radius:7px;touch-action:manipulation}
- #ini,#vow{grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(2,var(--key-h));gap:4px 3px}
- #ini button,#vow button{font-size:clamp(12px,3.45vw,15px);font-weight:600;letter-spacing:-.25px}
+ .row button{height:100%;min-width:0;min-height:0;padding:0 1px;line-height:1.15;font-size:clamp(21px,5.6vw,26px);font-family:"Charis SIL","Gentium Plus","Times New Roman",serif;border-radius:7px;touch-action:manipulation}
+ #ini,#vow{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:4px}
+ #ini button,#vow button{font-size:clamp(21px,5.6vw,25px);font-weight:600;letter-spacing:0}
  #ton{grid-template-columns:repeat(7,minmax(0,1fr))}
  #dictionaryPanel{flex:1;min-height:0}#dictionaryPanel[hidden]{display:none}
  #dictionaryFrame{height:100%!important;min-height:0!important}
